@@ -27,30 +27,6 @@ def get_bpr_data(rating_all, rating_train, item_count, neg_sample):
     return np.reshape(np.asarray(t), [-1,3]) 
 
 
-def get_adj_matrix_lightgcn(train_rating, user_count, item_count):
-    '''
-    get adjacent matrix of traindata#
-    '''
-    item_user_train = defaultdict(set)
-    for key in train_rating.keys():
-        for i in train_rating[key]:
-            item_user_train[i].add(key)
-    user_item_indexs, user_item_values = [], []
-    item_user_indexs, item_user_values = [], []
-
-    for x in train_rating.keys():
-        len_u = len(train_rating[x])
-        for y in train_rating[x]:
-            user_item_indexs.append([x, y])
-            len_v = len(item_user_train[y])
-            d_uv = pow(len_u, 0.5) * pow(len_v, 0.5)
-            user_item_values.append(1.0/d_uv)
-            item_user_indexs.append([y,x])
-            item_user_values.append(1.0/d_uv)
-    user_item_sparse_matrix = tf.SparseTensor(indices=user_item_indexs, values=user_item_values, dense_shape=[user_count, item_count])
-    item_user_sparse_matrix = tf.SparseTensor(indices=item_user_indexs, values=item_user_values, dense_shape=[item_count, user_count])
-    return user_item_sparse_matrix, item_user_sparse_matrix
-
 
 def get_adj_matrix_gcn(train_rating, user_count, item_count):
     '''
