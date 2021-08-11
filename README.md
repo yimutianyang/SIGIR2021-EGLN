@@ -24,7 +24,8 @@ Usage
 * Dataset:<br>
 Under the data folder(cd ./datasets)
 * Run model for amazon dataset:<br>
-python code/amazon_code/egln.py<br>
+cd ./code/amazon_code
+python egln.py<br>
 
 
 Citation
