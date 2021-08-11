@@ -1,5 +1,5 @@
 # SIGIR2021-EGLN
-The implement of papar "Enhanced Graph Learning for Collaborative Filtering via Mutual Information Maximization"
+The implement of paper "Enhanced Graph Learning for Collaborative Filtering via Mutual Information Maximization"
 ![](https://github.com/yimutianyang/SIGIR2021-EGLN/blob/main/figure/model.jpg)
 
 Neural graph based Collaborative Filtering (CF) models learn user and item embeddings based on the user-item bipartite graph structure, and have achieved state-of-the-art 
