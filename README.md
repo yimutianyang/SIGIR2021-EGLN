@@ -40,7 +40,16 @@ If you find this useful for your research, please kindly cite the following pape
   year={2021}
 }
 ```
-
+This work focus on graph structure learning via graph mutual infomax. If you are also interested in graph node attributes learning, you can refer to the following paper:<br>
+```
+@inproceedings{wu2020joint,
+  title={Joint item recommendation and attribute inference: An adaptive graph convolutional network approach},
+  author={Wu, Le and Yang, Yonghui and Zhang, Kun and Hong, Richang and Fu, Yanjie and Wang, Meng},
+  booktitle={Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={679--688},
+  year={2020}
+}
+```
 Author contact:
 --------------
 Email: yyh.hfut@gmail.com
