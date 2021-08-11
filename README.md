@@ -1,6 +1,7 @@
 # SIGIR2021-EGLN
 The implement of papar "Enhanced Graph Learning for Collaborative Filtering via Mutual Information Maximization"
 
+
 Neural graph based Collaborative Filtering (CF) models learn user and item embeddings based on the user-item bipartite graph structure, and have achieved state-of-the-art 
 recommendation performance. In the ubiquitous implicit feedback based CF, users’ unobserved behaviors are treated as unlinked edges in the user-item bipartite graph. 
 As users’ unobserved behaviors are mixed with dislikes and unknown positive preferences, the fixed graph structure input is missing with potential positive preference links. 
@@ -22,7 +23,6 @@ Usage
 -----
 * Dataset:<br>
 Under the data folder(cd ./datasets)
-* Item Recommendation Task:<br>
 * Run model for amazon dataset:<br>
 python code/amazon_code/egln.py<br>
 
