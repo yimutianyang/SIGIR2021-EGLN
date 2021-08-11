@@ -31,10 +31,11 @@ Citation
 --------
 If you find this useful for your research, please kindly cite the following paper:<br>
 ```
-@article{EGLN2021,
+@inproceedings{yang2021enhanced,
   title={Enhanced Graph Learning for Collaborative Filtering via Mutual Information Maximization},
-  author={Yonghui Yang, Le Wu, Richang Hong, Kun Zhang and Meng Wang}
-  jconference={44nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  author={Yang, Yonghui and Wu, Le and Hong, Richang and Zhang, Kun and Wang, Meng},
+  booktitle={Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={71--80},
   year={2021}
 }
 ```
